@@ -5,3 +5,60 @@
 <p><b> Tecnologías utilizadas:  </b> Laravel 5.4, HTML5, Bootstrap, Javascript, JQuery, MySql</p>
 
 
+
+# Inventario - CIIDEPT #
+
+Sistema en Laravel (API) para inventario del CIIDEPT.
+
+Instalacion:
+```
+#!git
+
+git clone https://github.com/AyelenFernandez/inventario.git 
+
+```
+#!composer
+
+composer install   
+```
+
+```
+#!artisan
+
+ php artisan migrate 
+```
+
+```
+#!artisan
+
+ php artisan db:seed 
+```
+
+```
+#!artisan
+
+php artisan key:generate
+```
+
+Nota: si se agrega algun paquete nuevo (composer.json):
+
+```
+#!artisan
+composer update
+```
+
+Nota: para correr seeders de usuario (genera el usuario: admin@admin.com ):
+
+```
+#!artisan
+php artisan db:seed --class=UserTableSeeder
+```
+
+Se crea el panel (AdminLte) 
+
+Plantilla: https://github.com/jeroennoten/Laravel-AdminLTE
+### License
+
+Inventario is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+
+
